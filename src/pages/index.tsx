@@ -1,12 +1,12 @@
-import EventList from "@/components/events/event-list";
+import JobList from "@/components/jobs/job-list";
 import { getFeaturedEvents } from "@/mock/mock";
 
 function HomePage() {
-  const featuredEvents = getFeaturedEvents();
+  const featuredJobs = getFeaturedEvents();
 
   return (
     <div>
-      <EventList items={featuredEvents} />
+      <JobList jobs={featuredJobs} />
     </div>
   );
 }
