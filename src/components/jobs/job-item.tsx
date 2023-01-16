@@ -14,10 +14,17 @@ function JobItem({ job }: Props) {
 
   return (
     <li>
-      <Image src={job.image} alt={job.title} width={250} height={250} />
+      <Image
+        src={job.image}
+        alt={job.title}
+        width={250}
+        height={250}
+        className={"h-60 w-60"}
+      />
+
       <div>
         <div>
-          <h2>{job.title}</h2>
+          <h2 className={"text-3xl"}>{job.title}</h2>
           <div>
             <time>{ptBrDate}</time>
           </div>
