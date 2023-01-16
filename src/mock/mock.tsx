@@ -100,3 +100,11 @@ export const mock = [
   {id:99,title:"Mechanical Systems Engineer",description:"Nullam molestie nibh in lectus. Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam vel augue. Vestibulum rutrum rutrum neque.",location:"366 Warner Lane",date:"9/23/2022",image:"http://dummyimage.com/123x100.png/ff4444/ffffff",isFeatured:false},
   {id:100,title:"Product Engineer",description:"Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero. Nullam sit amet turpis elementum ligula vehicula consequat.",location:"4 Macpherson Park",date:"5/17/2022",image:"http://dummyimage.com/226x100.png/cc0000/ffffff",isFeatured:true}
 ]
+
+export const getFeaturedEvents = () => {
+  return mock.filter(event => event.isFeatured);
+}
+
+export const getAllEvents = () => {
+  return mock;
+}
