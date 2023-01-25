@@ -1,12 +1,6 @@
 {
-  "extends": ["@eduardomuchak/eslint-config", "next/core-web-vitals"],
+  "extends": ["next/core-web-vitals"],
   "rules": {
-    "prettier/prettier": [
-      "error",
-      {
-        "endOfLine": "auto"
-      }
-    ],
     "no-console": "warn",
     "react-hooks/exhaustive-deps": "off"
   },

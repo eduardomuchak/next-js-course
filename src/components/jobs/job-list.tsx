@@ -1,6 +1,8 @@
-import { Job } from "@/interfaces/IJobs";
+import { Job } from '@/interfaces/IJobs';
 
-import JobItem from "./job-item";
+import JobItem from './job-item';
+
+import styles from './job-list.module.css';
 
 type Props = {
   jobs: Job[];
@@ -8,7 +10,7 @@ type Props = {
 
 function JobList({ jobs }: Props) {
   return (
-    <ul>
+    <ul className={styles.list}>
       {jobs.map((job: Job) => (
         <JobItem key={job.id} job={job} />
       ))}
