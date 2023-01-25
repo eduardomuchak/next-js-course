@@ -2,6 +2,7 @@ import { Job } from '@/interfaces/IJobs';
 import Image from 'next/image';
 
 import styles from './job-item.module.css';
+import { Button } from '../ui/Button';
 
 type Props = {
   job: Job;
@@ -19,7 +20,7 @@ function JobItem({ job }: Props) {
       <Image src={job.image} alt={job.title} width={250} height={250} />
       <div className={styles.content}>
         <div className={styles.summary}>
-          <h2 className="text-3xl font-bold">{job.title}</h2>
+          <h2 className="text-2xl font-semibold">{job.title}</h2>
           <div className={styles.date}>
             <p>
               Posted on: <time>{ptBrDate}</time>
@@ -30,7 +31,7 @@ function JobItem({ job }: Props) {
           </div>
         </div>
         <div className={styles.actions}>
-          <button>See job details</button>
+          <Button link={`/jobs/${job.id}`}>See job details</Button>
         </div>
       </div>
     </li>
